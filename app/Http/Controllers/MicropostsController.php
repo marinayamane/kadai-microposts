@@ -33,6 +33,7 @@ class MicropostsController extends Controller
 
         $request->user()->microposts()->create([
             'content' => $request->content,
+            
         ]);
 
         return redirect()->back();
